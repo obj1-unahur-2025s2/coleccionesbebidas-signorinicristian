@@ -28,3 +28,25 @@ object terere {
         //tambien (cantidad * 0.1).max(1)
     }
 }
+
+object licuado {
+    var nutrientes = []
+    method agregar(unaFruta) {
+        nutrientes.add(unaFruta.nutrientes())
+    }
+    method rendimiento(cantidad) {
+        return nutrientes.sum() * cantidad
+    }
+}
+
+object manzana {
+    method nutrientes() = 4
+}
+
+object naranja {
+    method nutrientes() = 4
+}
+
+object mandarina {
+    method nutrientes() = 4
+}
