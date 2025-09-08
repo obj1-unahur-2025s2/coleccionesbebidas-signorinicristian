@@ -50,3 +50,13 @@ object naranja {
 object mandarina {
     method nutrientes() = 4
 }
+
+object aguaSaborizada {
+    var saborizante = terere
+    method saborizar(unaBebida) {
+        saborizante = unaBebida
+    }
+    method rendimiento() {
+        return 1 + saborizante.rendimiento(cantidad/4)
+    }
+}
