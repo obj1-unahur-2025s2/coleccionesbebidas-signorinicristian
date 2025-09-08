@@ -29,4 +29,11 @@ describe "test de tito" {
         assert.equals(0,tito.velocidad())
     }
 
+    test "tito consume un licuado de mkanzana y mandarina" {
+        licuado.agregar(manzana)
+        licuado.agregar(mandarina)
+        tito.consumir(3000, licuado)
+        assert.equals(expected, tito.velocidad())
+    }
+
 }
