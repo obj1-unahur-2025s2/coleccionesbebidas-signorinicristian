@@ -60,3 +60,13 @@ object aguaSaborizada {
         return 1 + saborizante.rendimiento(cantidad/4)
     }
 }
+
+object coctel {
+    const ingredientes = []
+    method agregar(unIngrediente) {
+        ingredientes.add(unIngrediente)
+    }
+    method rendimiento(cantidad) {
+        
+    }
+}
